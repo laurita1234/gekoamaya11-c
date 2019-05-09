@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Robot GEKKO Solar</title>
+  <meta name="description" content="Ejemplos de uso de FlexBox.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/default.css">
+  <style>
+		/*** CSS Flexible Layout Module - Caja Flexible -*/
+		h1{
+			display: flex;
+			display: -webkit-flex;
+			-webkit-flex-flow: row wrap;			
+		}
+		#cabecera,#contenido-cabecera > img {
+			-webkit-order: -1;
+			align-self: center;
+			-webkit-align-self: center;
+		}
+		#cabecera,#contenido-cabecera{
+			display: flex;
+			display: -webkit-flex;
+			-webkit-flex-flow: row wrap;
+		}
+
+		#viajes {
+			display: flex;
+			display: -webkit-flex;
+			-webkit-flex-flow: row wrap;
+		}
+		.dos{
+			background-color: #b6ebb3;
+			flex: 1;
+			-webkit-flex:1;
+			-webkit-order: 2;
+		}
+		.uno {
+			background-color: #bacee3;
+			flex: 1;
+			-webkit-flex: 1;
+			-webkit-order: 3;
+		}
+		.tres {
+			background-color: #7ebdbb;
+			flex: 1;
+			-webkit-flex:1;
+			-wbkit-order: 1;
+		}
+		.viajes-item {
+			display: flex;
+			display: -webkit-flex;
+			-webkit-flex-direction: column;
+		}
+		.viajes-item > img {
+			-webkit-order: -1;
+			align-self: center;
+			-webkit-align-self: center;
+		}
+		.viajes-item > button {
+			margin-top: auto;
+			width: 30%;
+			align-self: center;
+			-webkit-align-self: center;
+		}
+		@media all and (max-width: 500px) {
+			#viajes { -webkit-flex-direction: column; }
+			.viajes-item{
+				-webkit-order: 0; width: auto;
+			}
+		}
+</style>
+
+</head>
+<body class="home">
+	<div id="cabecera">
+		<div id="contenido-cabecera">
+			<h1 style="color:white;font-size: 7em;">Robot GEKKO Solar</h1>
+		</div>
+	</div>
+	<h1>Robot de limpieza móvil para instalaciones fotovoltaicas en tejados</h1>	
+	<section id='viajes'>
+	  <section class='viajes-item uno'>
+	    <h2>El principio GEKKO: inspirado en la naturaleza</h2>
+	    <p>¿Qué es el principio GEKKO?</p>
+	    <p>Los robots de SERBOT son capaces de trabajar en áreas lisas e inclinadas: debido al principio GEKKO. Estudiamos los pies de geckos y transformamos su principio en una solución técnicamente factible. Tuvimos que resolver dos problemas: la fijación y el caminar. Para el primer problema usamos ventosas, que parecen tazas de té invertidas. Capaces de subir y bajar independientemente y succionarse a superficies lisas.</p>
+	    <p>¿Cómo están dispuestas las ventosas?</p>
+	    <p>Una docena o más de ventosas están dispuestas en forma de D o a la inversa, como su imagen en un espejo. Una correa mueve estas ventosas a lo largo de la forma D. Estas se desplazan, subiendo y bajando, a lo largo de los sectores curvos o a lo largo de los sectores rectos de la D.</p>
+	    <img src='images/malta.jpg' alt='' />
+	    <button>MÁS INFO</button>
+	  </section>
+	  <section class='viajes-item dos'>
+	    <h2>Al fin: ¡ nunca más andamios tambaleantes !</h2>
+	    <p>Trabajar en andamios colgantes es peligroso, especialmente en edificios altos. El robot GEKKO Gondola resuelve este problema: El andamio se fija a la superficie mediante un sistema de fijación que se adapta a la forma de la fachada. La plataforma queda asegurada.</p>
+	    <p>Fijación adaptada a la forma de la fachada: mejora la seguridad</p>
+<p>El andamio se mueve horizontalmente de forma segura: movilidad mejorada.</p>
+<p>El robot succiona el andamio a la superficie: estabilidad mejorada</p>
+<p>Potencia de limpieza de hasta 2.000 m2 por hora: eficiencia elevada</p>
+<p>Manejo desde el andamio: control inmediato</p>
+	    <img src='images/oporto.jpg' alt='' />
+	    <button>MÁS INFO</button>
+	  </section>
+	  <section class='viajes-item tres'>
+	    <h2>Robot GEKKO Facade</h2>
+	    <p>Robot de limpieza para grandes fachadas de edificios</p>
+	    <p>La arquitectura realizo un progreso impresionante en el pasado, dando lugar a edificios aún más lujosos. Sin embargo, la tecnología de limpieza se mantuvo en la etapa de trabajo manual.</p>
+	    <p>El robot GEKKO Facade restablece este déficit. Es el primer robot comercial que trepa superficies inclinadas o verticales.</p>
+	    <p>El robot garantiza una excelente limpieza debido sus cepillos giratorios combinados con el uso de agua desmineralizada.</p>
+	    <p>El robot, con su sistema de soporte, puede integrarse en casi todas las unidades de mantenimiento de edificios existentes (BMU).</p>
+	    <img src='images/polonia.jpg' alt='' />
+	    <button>MÁS INFO</button>
+	  </section>
+	</section>
+</body>
+<footer>
+	Realizado por Laura Marcela Amaya Pinto 2019
+</footer>
+</html>
+
